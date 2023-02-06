@@ -60,6 +60,18 @@ function greedyMakeChange(target, coins = [25, 10, 5, 1]) {
 
 function makeBetterChange(target, coins = [25, 10, 5, 1]) {
   // your code here
+  let dp=Array(target+1).fill(Infinity);
+  //base case
+  dp[0]=0;
+
+  for(let i=1;i<target;i++){
+    for(let j of coins){
+      if(i-j>=0){
+      dp[i]=Math.min(dp[i],1+ dp[i-j])
+      }
+    }
+  }
+  return dp[target] > target ? -1:dp[target];
 }
 
 
