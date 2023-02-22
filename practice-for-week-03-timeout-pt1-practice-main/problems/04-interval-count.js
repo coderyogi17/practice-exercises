@@ -20,7 +20,7 @@ function intervalCount(cb, delay, amount) {
   // Your code here
 const intervalObj=setInterval(()=>{
   cb();
-amount--;
+amount--
 if(amount===0){
 clearInterval(intervalObj);
 }
