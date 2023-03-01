@@ -184,7 +184,7 @@ describe ('Enemy', function () {
 
     expect(enemy.attackTarget).to.equal(null);
 
-    player.hit('enemy');
+    player.hit('goblin');
 
     expect(enemy.attackTarget).to.equal(player);
   });

@@ -5,6 +5,7 @@ class Room {
     this.description = description;
     this.exits = {};
     this.items = [];
+    this.enemies = [];
   }
 
   getEnemies() {
@@ -51,19 +52,26 @@ class Room {
     return this.exits[direction];
   }
 
-  getItemByName(name) {
-
-    // Fill this in
-
-  }
+  getItemByName(name){
+    for (let item of this.items) {
+        if (item.name === name) {
+            return item;
+        }
+    }
+    
+}
 
   getEnemyByName(name) {
 
     // Fill this in
-
+    for(let enemy of this.enemies){
+      if(enemy.name ===name){
+        return enemy;
+      }
+    }
+    return null;
 }
 }
-
 module.exports = {
   Room,
 };

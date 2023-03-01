@@ -66,6 +66,7 @@ class World {
       let newItem;
 
       if (itemData.isFood) {
+        //console.log("ERROR: Food not supported yet.");
         newItem = new Food(itemData.name, itemData.description);
       } else {
         newItem = new Item(itemData.name, itemData.description);
@@ -82,6 +83,7 @@ class World {
       let enemyRoom = World.rooms[enemyData.room];
       let newEnemy = new Enemy(enemyData.name, enemyData.description, enemyRoom);
       World.enemies.push(newEnemy);
+      newEnemy.act();
     }
 
   }
