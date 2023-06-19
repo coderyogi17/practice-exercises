@@ -21,13 +21,6 @@ class Enemy extends Character {
       this.rest();
     } else {
       const exitsDir = this.currentRoom.getExits();
-      // console.log(`this is the exit value: ${exitsDir}`);
-      // const exitNum = exitsDir.length;
-      // console.log(`this is the numeric lenth value: ${exitNum}`);
-      // const randomNum = Math.floor(Math.random() * exitNum);
-      // console.log(`this is the random value: ${randomNum}`);
-      // const dir = exitsDir[randomNum];
-      // console.log(`this is the final direction value: ${dir}`);
       const room = this.currentRoom.getRoomInDirection(exitsDir);
       this.currentRoom = room;
       this.cooldown = 3000;
@@ -35,7 +28,6 @@ class Enemy extends Character {
     }
   }
   
-
   takeSandwich() {
     // Fill this in
   }
