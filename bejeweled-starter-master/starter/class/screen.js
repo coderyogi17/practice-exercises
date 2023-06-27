@@ -90,16 +90,16 @@ class Screen {
   static setGrid(row, col, char) {
     if (!Screen.initialized) return;
 
-    if (char.length !== 1) {
-      throw new Error("invalid grid character");
-    }
+    // if (char.length !== 1 || char.length !== 2) {
+    //   throw new Error("invalid grid character");
+    // }
     Screen.grid[row][col] = char;
   }
 
 
   static addCommand(key, description, action) {
 
-    if (key === 'q') {
+    if (key === 'p') {
       throw new Error("you cannot overwrite 'q'");
     }
 
