@@ -23,7 +23,7 @@ class Cursor {
 
     this.gridColor = 'black';
     this.firstColor = 'yellow';
-    this.secondColor = 'blue';
+    this.secondColor = 'white';
     this.selectionColor();
 
   }

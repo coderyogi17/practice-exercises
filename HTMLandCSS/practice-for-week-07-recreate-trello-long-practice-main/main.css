@@ -1,0 +1,227 @@
+/* Your code here */
+
+body{
+  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif ;
+  font-size: 14px;
+  margin: 0;
+
+}
+
+.header-nav__container{
+  background-color: #026AA7;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+}
+#alerts {
+  background-color: #CF513D;
+}
+/* Supplied CSS follows. */
+.header-nav__group{
+  display: flex;
+
+}
+@media screen and (max-width: 730px) {
+  /* Hide the header search input field. */
+  #search{
+    display: none;
+  }
+  /* Hide the "Boards" text, but leave the boards icon. */
+  .boards-label{
+    display: none;
+  }
+}
+.team__container{
+  background: #f4f5f7;
+  padding: 32px;
+}
+
+.team__info{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+} 
+.team__info > h1{
+margin: 0 0 12px;
+font-size: 24px;
+font-weight: 600;
+line-height: 28px;
+}
+
+
+.team__info a{
+  color: #172b4d;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.tabbed-nav__container{
+  background-color: #f4f5f7;
+
+}
+
+
+.tabbed-nav__group{
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+
+.tabbed-nav__link{
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+
+@media screen and (min-width: 500px) {
+
+  .tabbed-nav__group{
+    justify-content:  center;
+    align-items: center;
+  }
+  
+
+}
+@media screen and (max-width: 500px) {
+
+  .tabbed-nav__group{
+   display: block;
+  }
+  .tabbed-nav__link{
+
+  display: block;
+    text-align: center;
+  }
+  
+}
+
+.boards__container{
+  margin: 0 auto;
+  padding: 32px;
+
+  max-width: 1400px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.boards__sidebar{
+  background-color: #6C547B;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px 32px 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+  flex-basis: 220px;
+}
+.boards__sidebar-content .title, .boards__sidebar-content a{
+  color: white;
+}
+
+.boards__sidebar-content .description{
+  color: lightblue;
+}
+
+.boards__group{
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+
+.boards__board{
+  background-color: hotpink;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 3px 8px;
+  position: relative;
+  color: white;
+  width: 25%;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  
+
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1280px) {
+  .boards__boards{
+    width: 33%;
+  }
+  
+}
+@media screen and  (max-width: 750px) {
+  .boards__boards{
+    width: 100%;
+    max-width: unset;
+  }
+  
+}
+
+.header-nav__button {
+  display: inline-flex;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  background-color: hsla(0,0%,100%,.3);
+  box-shadow: none;
+  color: #fff;
+  line-height: 32px;
+  margin: 0 4px 0 0;
+  transition: .1s ease;
+  white-space: nowrap;
+  padding: 8px;
+  height: 20px;
+}
+
+.header-nav__button#search > input {
+  border-style: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.header-nav__button > .boards-label {
+  font-weight: 700;
+  padding-left: 4px;
+}
+
+.header-nav__trello-logo {
+  opacity: 0.5;
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 5px;
+}
+
+ .header-nav__button > i{
+  width: 24px;
+}
