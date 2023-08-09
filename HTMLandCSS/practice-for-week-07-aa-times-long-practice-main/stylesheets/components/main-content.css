@@ -1,0 +1,131 @@
+/* Your code here */
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.right-half{
+  
+   
+    border-left: 1px solid #e2e2e2;
+    padding-left: 10px;
+}
+
+/*change lives article*/
+
+.change-lives{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.change-lives h1{
+    grid-column: 1/-1;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px 0px;
+    
+}
+
+.react-redux h2{
+    width: 95%;
+    padding-bottom: 30px;
+}
+.redux-pros{
+    list-style: disc;
+    padding: 10px;
+    font-size: 11px;
+    padding-right: 30px;
+
+}
+.redux-pros li{
+    min-width: 150px;
+}
+
+.comments{
+    color: #6288a5;
+    font-size: 8px;
+}
+.warning{
+    display: block;
+    font-size: 12px;
+}
+
+.video{
+    padding-bottom: 50px;
+}
+ .cat-acad{
+    border-left: 2px solid #e2e2e2;
+    padding-left: 5px;
+ }
+
+/*------------------------*/
+
+/*lower secondary articles*/
+.right-top{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    border: 2px solid black;
+    border-width: 2px 0;
+}
+
+.author{
+    color:  #6f6f6f;
+    font-size: 11px;
+    display: inline-block;
+    align-self: flex-start;
+    margin: 10px 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italicized{
+    font-style: italic;
+}
+.main-heading{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.secondary-heading{
+    font-size: 20px;
+}
+.tertiary-heading{
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+}
+.tagline{
+    font-size: 10px;
+}
+.article-header{
+    padding-top: 0px 10px;
+
+}
+
+
+.operations, .other-articles{
+    border-top: 2px solid #e2e2e2;
+}
+
+.side-articles{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 4fr 3fr;
+}
+.side-articles li{
+    border: 1px solid #e2e2e2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+p{
+    font-size: 11px;
+    padding-right: 20px;
+}

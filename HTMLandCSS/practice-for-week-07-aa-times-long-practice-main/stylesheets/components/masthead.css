@@ -1,0 +1,107 @@
+/* Your code here */
+.menu {
+  grid-area: menu;
+}
+.action {
+  grid-area: action;
+}
+.tech {
+  grid-area: tech;
+}
+.date {
+  grid-area: date;
+}
+.logo {
+  grid-area: logo;
+}
+.paper {
+  grid-area: paper;
+}
+
+.masthead {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "menu . action"
+  ". tech ."
+  "date logo paper";
+  padding:10px;
+}
+
+.menu-bar, .search-bar{
+  font-size: 11px;
+  padding: 7px 9px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.action{
+  grid-area: action;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 8px 0px;
+}
+.technology{
+
+  grid-area: tech;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e2e2;
+  border-bottom-width: 0px;
+}
+
+.tech{
+  display: flex;
+  
+}
+.tech span{
+  font-size: 10px;
+  color: #6f6f6f;
+  margin: 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.date{
+  grid-area: date;
+  font-size: 11px;
+
+}
+.logo{
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  border-top: 1px solid #e2e2e2;
+
+
+}
+.paper{
+  grid-area: paper;
+  font-size: 11px;
+  justify-content: flex-end;
+
+}
+
+.date, .paper{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 7px;
+  border-top: 1px solid #e2e2e2;
+
+}
+
+.date, .logo, .paper{
+  border-bottom: 1px solid #e2e2e2;
+}
+.menu-bar:hover, .search-bar:hover{
+ background:#f7f7f5;
+ cursor: pointer;
+}
+

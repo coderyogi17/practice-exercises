@@ -1,0 +1,24 @@
+/* Your code here */
+.main{
+    margin: 0 auto;
+  
+
+    width: 80%;
+ 
+
+} 
+.main ul{
+    font-size: 12px;
+     display: flex;
+    justify-content: space-between;
+     align-items: center;
+     padding: 5px 0; 
+ }
+ @media screen and (max-width: 750px) {
+    .main ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+}

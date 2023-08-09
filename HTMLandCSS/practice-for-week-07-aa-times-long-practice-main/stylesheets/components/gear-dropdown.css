@@ -1,0 +1,40 @@
+.pref {
+  background-color: white;
+  border: 1px solid #efefef;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  padding: 0.5em;
+  border-radius: 2px;
+  font-size: 12px;
+  position: absolute;
+  right: 135px;
+  top: 45px;
+  width: 200px;
+}
+
+
+.pref__section {
+  border-top: 1px solid #dedede;
+}
+
+.pref__section:first-child {
+  border-top: none;
+}
+
+.pref__section-header {
+  font-weight: bold;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pref__section-link {
+  margin: .5em;
+  padding: .5em;
+  text-transform: uppercase;
+}
+
+.pref__section-link:hover {
+  background-color: #dedede;
+}
+.pref--hidden{
+  visibility: hidden;
+}
