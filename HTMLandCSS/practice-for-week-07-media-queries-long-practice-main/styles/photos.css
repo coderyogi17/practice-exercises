@@ -1,0 +1,60 @@
+.photo-card {
+    background-color: #1d3e81;
+    color: #E8EFF0;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.photo-card a {
+    color: #E8EFF0;
+}
+.photo-card img {
+    width: 100%;
+}
+
+.photo-card p {
+    text-align: justify;
+}
+
+.photo-card .content {
+    display: block;
+    text-align: center;
+}
+
+/* Your code here */
+.two-cards{
+    width: 100%;
+    
+}
+@media all and (min-width: 600px) and (max-width: 900px), (min-width: 900px), print{
+
+    .photo-card .content{
+        display: flex;
+        gap: 4%;
+    }
+    .content img, .content p{
+        width: 48%;
+    }
+
+    .photo-card a, .photo-card h3 {
+        display: block;
+        text-align: left;
+    }
+}
+@media all and (min-width: 900px), print {
+
+    .two-cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    .photo-card{
+        width:40%;
+    }
+    
+
+}
+@media print {
+    .photo-card {page-break-before: always;}
+  }
