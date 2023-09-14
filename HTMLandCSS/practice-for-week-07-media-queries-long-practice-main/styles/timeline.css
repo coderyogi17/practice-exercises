@@ -85,3 +85,17 @@
 }
 
 /* Your code here */
+@media print {
+    .timeline {
+        min-width: 0;            
+    }
+
+   .timeline-scroll-area{
+    transform-origin: left center;
+    transform: scale(.6);
+    width: 140%;
+   }
+   .timeline-labels{
+    min-width: 0;
+   }
+}

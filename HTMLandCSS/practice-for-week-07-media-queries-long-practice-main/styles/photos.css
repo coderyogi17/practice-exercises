@@ -48,6 +48,7 @@
     .two-cards{
         display: flex;
         justify-content: space-between;
+        
     }
     .photo-card{
         width:40%;
@@ -56,5 +57,11 @@
 
 }
 @media print {
-    .photo-card {page-break-before: always;}
-  }
+    .two-cards .photo-card {
+        page-break-before: avoid;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+
+    }
+    
+}
