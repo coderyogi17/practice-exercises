@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Different Form Methods</title>
+</head>
+
+<body>
+  <!-- clicking on this <a> tag will make a GET / request -->
+  <a href="/">Link to Resource</a>
+
+  <!-- home -->
+  <form action="/home" method="GET">
+    <button type="submit">home</button>
+  </form>
+
+  <!-- submit contact form -->
+  <form action="/form/:id" method="POST">
+    <button type="submit">Submit contact form</button>
+  </form>
+
+  <!-- get posts page -->
+  <form action="/posts" method="GET">
+    <button type="submit">Access Posts</button>
+  </form>
+
+  <!-- get edit post -->
+  <form action="/posts/:postid/edit" method="GET">
+    <button type="submit">edit a post</button>
+  </form>
+
+  <!-- get create post -->
+  <form action="/posts/new" method="GET">
+    <button type="submit">Create a post</button>
+  </form>
+<!--Create new user-->
+<form action="/users/user" method="POST">
+  <button type="submit">submit contact form</button>
+</form>
+
+<!-- login-->
+<form action="/login" method="GET">
+  <button type="submit">Login</button>
+</form>
+<!-- logout -->
+
+<form action="/logout" method="GET">
+  <button type="submit">Logout</button>
+</form>
+
+<!-- get  post comments-->
+
+<form action="/posts/:postid/comments" method="GET">
+  <button type="submit">get post comments</button>
+</form>
+
+<!-- get  post comments create form-->
+
+<form action="/posts/:postid/comments/create" method="GET">
+  <button type="submit">get post comment create form</button>
+</form>
+
+<!-- get edit form for post comment-->
+
+<form action="/comments/:commentID/edit" method="GET">
+  <button type="submit">get post comment edit form</button>
+</form>
+
+<!--submit like for post-->
+<form action="/posts/:postid/likes//new" method="POST">
+  <button type="submit">like</button>
+</form>
+
+<!-- delete like -->
+<form action="/posts/:postid/likes/:likeid/delete" method="POST">
+  <button type="submit">dislike</button>
+</form>
+<!-- access posts of user -->
+<form action="users/:userid/posts" method="GET">
+  <button type="submit">get posts of user</button>
+</form>
+<!-- submit search -->
+<form action="posts/search" method="POST">
+  <button type="submit">submit search</button>
+</form>
+</body>
+</html>
