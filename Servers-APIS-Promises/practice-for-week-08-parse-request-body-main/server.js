@@ -12,14 +12,17 @@ server=http.createServer((req,res)=>{
     console.log(req.url);
     let reqBody = '';
     req.on('data', (data) => {
+      console.log(data);
       reqBody += data;
-      console.log(reqBody);
+     
     });
   
     req.on('end', () => {
         if(reqBody.length>0){
             req.body = parseBody(reqBody);
         }
+        //console.log(req);
+        //console.log(res);
       sendFormPage(req,res);
     });
 });
