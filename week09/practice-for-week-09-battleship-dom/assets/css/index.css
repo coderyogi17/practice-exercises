@@ -1,0 +1,55 @@
+/* Your code here */
+h1,
+h2 {
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ship{
+    border: 1px solid black;
+}
+
+.gameboard {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 90vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.row {
+  width: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  height: calc(90vh / 10);
+}
+
+.col {
+  border: 1px solid black;
+  width: calc(90vh / 10);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.untouched:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+.untouched:active {
+  background-color: red;
+}
+
+.failure {
+  background-color: brown;
+}
+.success {
+  background-color: green;
+}
+
+.computerBoard div[data-row="0"][data-col="8"] {
+  background-color: red;
+}
