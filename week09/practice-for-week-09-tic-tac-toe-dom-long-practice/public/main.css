@@ -1,0 +1,50 @@
+/* Your code here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.board{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.title, .message{
+    text-align: center;
+}
+.col{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row:nth-of-type(2){
+    border: 1px solid black;
+    border-width: 1px 0 1px 0;
+}
+.row{
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+}
+#square-1, #square-4, #square-7{
+    border: 1px solid black;
+    border-width: 0px 1px 0px 1px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+img{
+width: 25%;
+min-width: 50px;
+}
