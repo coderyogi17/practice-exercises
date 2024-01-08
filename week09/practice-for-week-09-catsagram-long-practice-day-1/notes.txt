@@ -1,0 +1,21 @@
+response.text(): when the returned response data is not in JSON format or not known, the use this to convert to string/text first
+or if you know it is JSON returned then use response.json() directly and apply response[idx] to get the specific obj within the array
+
+"[{\"id\":\"MTc0MTQ2NA\",\"url\":\"https://cdn2.thecatapi.com/images/MTc0MTQ2NA.gif\",\"width\":400,\"height\":225}]"
+
+
+JSON.Parse(response): give back a JSON object by parsing text()
+[{…}]
+0: 
+    height:225
+    id: 
+    "MTc0MTQ2NA"
+    url: 
+    "https://cdn2.thecatapi.com/images/MTc0MTQ2NA.gif"
+    width: 
+    400
+
+just get me index 0 of of the array object with JSON objects inside    Response[0]:
+    {id: 'MTc0MTQ2NA', url: 'https://cdn2.thecatapi.com/images/MTc0MTQ2NA.gif', width: 400, height: 225}
+
+Now extract url for src,and height and width as attributes for img element/tag
