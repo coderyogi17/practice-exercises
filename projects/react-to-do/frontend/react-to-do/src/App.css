@@ -1,0 +1,9 @@
+.card {
+  padding: 2em;
+  border: 2px;
+  border-color: black;
+}
+
+.inputbox{
+  margin: 2em;
+}
